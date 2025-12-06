@@ -1218,7 +1218,7 @@ GeneralSection:Button("老外传送至玩家身边", function()
 end)
 GeneralSection:Button("翻译脚本迪脚本更新12月6", function()
   
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/Auto-language"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/ddjlb7598/nb/refs/heads/main/%E7%9A%AE%E8%84%9A%E6%9C%AC%E6%9C%80%E6%96%B0%E5%B7%B2%E4%BF%AE%E5%A4%8D%E5%8F%AF%E7%94%A8%E7%A0%B4%E8%A7%A3%E7%89%88%E6%BA%90%E7%A0%81-Rb%E4%BF%AE%E5%A4%8D%EF%BC%8Cxipro%E7%A0%B4%E8%A7%A3%20(1).lua"))()
 end)
 GeneralSection:Button("迪飞天创始者本人自制有动作", function()
   
@@ -6872,6 +6872,7 @@ r50_0:Tab("『汽车经销大亨』", "18930406865"):section("整合脚本", tru
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Automobiledealertycoon.lua]]))()
 
 end)    
+
 
 
 
