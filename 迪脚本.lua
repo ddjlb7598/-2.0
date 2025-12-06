@@ -1264,7 +1264,7 @@ GeneralSection:Button("迪自瞄", function()
 end)
 GeneralSection:Button("迪甩缝合", function()
   
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
+  loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
 end)
 GeneralSection:Button("甩飞所有人", function()
   
@@ -6872,6 +6872,7 @@ r50_0:Tab("『汽车经销大亨』", "18930406865"):section("整合脚本", tru
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Automobiledealertycoon.lua]]))()
 
 end)    
+
 
 
 
