@@ -43,12 +43,12 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 local RevenantLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
 RevenantLib.DefaultColor = Color3.fromRGB(255, 0, 0)
 RevenantLib:Notification({
-  Text = "迪脚本作者: 刘佳旭如果你使用该脚本100%是泄露出去的只有内部人员才知道\u{e000}",
+  Text = "迪脚本作者赠予: 如果你使用该脚本100%是泄露出去的只有内部人员才知道\u{e000}",
   Duration = 20,
 })
 wait(1)
 RevenantLib:Notification({
-  Text = "迪脚本帮助者:😂 张军辉聂志超聂晨博\u{e000}",
+  Text = "迪脚本帮助者:😂 同学贡献0\u{e000}",
   Duration = 20,
 })
 wait(1)
@@ -1216,9 +1216,9 @@ GeneralSection:Button("老外传送至玩家身边", function()
   
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Teleport%20Gui.lua"))()
 end)
-GeneralSection:Button("点击传送道具", function()
+GeneralSection:Button("翻译脚本迪脚本更新12月6", function()
   
-  loadstring(game:HttpGet("https://pastefy.app/Jf2QXOwa/raw"))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/Item/refs/heads/main/Auto-language"))()
 end)
 GeneralSection:Button("迪飞天创始者本人自制有动作", function()
   
@@ -6872,6 +6872,7 @@ r50_0:Tab("『汽车经销大亨』", "18930406865"):section("整合脚本", tru
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Automobiledealertycoon.lua]]))()
 
 end)    
+
 
 
 
