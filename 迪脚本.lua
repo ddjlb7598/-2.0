@@ -6869,9 +6869,10 @@ r50_0:Tab("『Rooms&Doors』", "73219704811084"):section("整合脚本", true):B
 end)
 r50_0:Tab("『汽车经销大亨』", "73219704811084"):section("整合脚本", true):Button("迪脚本-汽车经销大亨", function()
   
-  loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Automobiledealertycoon.lua]]))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/car%20dealer", true))()
 
 end)    
+
 
 
 
