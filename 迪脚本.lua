@@ -4177,10 +4177,10 @@ r125_0:Button("航空模拟器音乐", function()
   r0_100.Parent = game.Workspace
   r0_100:Play()
 end)
-local r127_0 = r50_0:Tab("『新缝合脚本』", "18930406865"):section("其他脚本", true)
-r127_0:Button("kani神仇破解", function()
+local r127_0 = r50_0:Tab("『其他脚本』", "18930406865"):section("其他脚本", true)
+r127_0:Button("鸭Hub", function()
   
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/eksan966/Federal/refs/heads/main/Kanl"))()
+  loadstring(game:HttpGet(utf8.char((function()
     
     return table.unpack({
       104,
@@ -4235,9 +4235,9 @@ r127_0:Button("鲨脚本", function()
   
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/sharksharksharkshark/shark-shark-shark-shark-shark/main/shark-scriptlollol.txt]], true))()
 end)
-r127_0:Button("亡命速速脚本", function()
+r127_0:Button("河流脚本", function()
   
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/VGXMODPLAYER68/Vgxmod-Hub/refs/heads/main/Deadly%20delivery.lua"))()
+  loadstring(game:HttpGet("https://pastebin.com/raw/M29MuQsP"))()
 end)
 r127_0:Button("地岩脚本", function()
   
@@ -6872,8 +6872,6 @@ r50_0:Tab("『汽车经销大亨』", "18930406865"):section("整合脚本", tru
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Automobiledealertycoon.lua]]))()
 
 end)    
-
-
 
 
 
