@@ -9,7 +9,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 wait(1.5)
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "迪脚本",
-  Text = "迪脚本更新日期12月6日修复问题 本来想搞成检测服务器ID的 后面还是因为麻烦 就不搞了",
+  Text = "迪脚本更新日期12月7日修复问题 本来想搞成检测服务器ID的 后面还是因为麻烦 就不搞了",
   Icon = "rbxassetid://120259348660392",
   Duration = 1,
   Callback = bindable,
@@ -43,7 +43,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 local RevenantLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
 RevenantLib.DefaultColor = Color3.fromRGB(255, 0, 0)
 RevenantLib:Notification({
-  Text = "迪脚本作者赠予: 如果你使用该脚本100%是泄露出去的只有内部人员才知道\u{e000}",
+  Text = "迪脚本作者赠予: 你好\u{e000}",
   Duration = 20,
 })
 wait(1)
@@ -6872,6 +6872,7 @@ r50_0:Tab("『汽车经销大亨』", "73219704811084"):section("整合脚本", 
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/car%20dealer", true))()
 
 end)    
+
 
 
 
