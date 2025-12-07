@@ -10,7 +10,7 @@ wait(1.5)
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "迪脚本",
   Text = "迪脚本更新日期12月6日修复问题 本来想搞成检测服务器ID的 后面还是因为麻烦 就不搞了",
-  Icon = "rbxassetid://73219704811084",
+  Icon = "rbxassetid://120259348660392",
   Duration = 1,
   Callback = bindable,
   Button2 = "请勿倒卖",
@@ -6872,6 +6872,7 @@ r50_0:Tab("『汽车经销大亨』", "73219704811084"):section("整合脚本", 
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Automobiledealertycoon.lua]]))()
 
 end)    
+
 
 
 
