@@ -10,7 +10,7 @@ wait(1.5)
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "迪脚本",
   Text = "迪脚本更新日期12月6日修复问题 本来想搞成检测服务器ID的 后面还是因为麻烦 就不搞了",
-  Icon = "rbxassetid://18941716391",
+  Icon = "rbxassetid://73219704811084",
   Duration = 1,
   Callback = bindable,
   Button2 = "请勿倒卖",
@@ -659,7 +659,7 @@ AuthorInfoSection:Label("神仇给我提供了许多的功能源码")
 AuthorInfoSection:Label("谢谢您的支持与帮助^ω^")
 AuthorInfoSection:Button("复制作者QQ", function()
   
-  setclipboard("2131869117")
+  setclipboard("73219704811084")
 end)
 AuthorInfoSection:Button("复制迪脚本QQ主群", function()
   
@@ -702,13 +702,13 @@ UISettingsSection:Button("关闭脚本", function()
   
   game:GetService("CoreGui").frosty:Destroy()
 end)
-local AnnouncementSection = UILibrary:Tab("『公告』", "18930406865"):section("公告", true)
+local AnnouncementSection = UILibrary:Tab("『公告』", "73219704811084"):section("公告", true)
 AnnouncementSection:Label("此脚本为免费")
 AnnouncementSection:Label("只有内部人员才知道")
 AnnouncementSection:Label("内部人员就几个人")
 AnnouncementSection:Label("严禁泄露 泄露无父无母")
 AnnouncementSection:Label("有时间就会更新")
-local GeneralTab = UILibrary:Tab("『通用』", "18930406865")
+local GeneralTab = UILibrary:Tab("『通用』", "73219704811084")
 local LocalPlayerSection = GeneralTab:section("本地玩家", true)
 local sliderMethod = "Slider"
 local sliderLabel = "设置速度"
@@ -1446,7 +1446,7 @@ GeneralSection:Toggle("圆圈高亮透视", "ESP", false, function(enabled)
         imageLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
         imageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
         imageLabel.BackgroundTransparency = 1
-        imageLabel.Image = "rbxassetid://2200552246"
+        imageLabel.Image = "rbxassetid://73219704811084"
       else
         if player.Character:FindFirstChildOfClass("Highlight") then
           player.Character:FindFirstChildOfClass("Highlight"):Destroy()
@@ -2110,7 +2110,7 @@ QuickSettingsSection:Button("旋转500", function()
   
   loadstring(game:HttpGet("https://pastefy.app/9emFsJ7N/raw"))()
 end)
-local HubScriptsSection = UILibrary:Tab("『HUB脚本』", "18930406865"):section("HUB脚本", true)
+local HubScriptsSection = UILibrary:Tab("『HUB脚本』", "73219704811084"):section("HUB脚本", true)
 HubScriptsSection:Button("EZ-HUB", function()
   
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/debug42O/Ez-Industries-Launcher-Data/master/Launcher.lua]], true))()
@@ -2171,7 +2171,7 @@ HubScriptsSection:Button("HOHO_hub", function()
   
   loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 end)
-local TeleportSection = UILibrary:Tab("『传送与甩飞』", "18930406865"):section("传送与甩飞玩家", true)
+local TeleportSection = UILibrary:Tab("『传送与甩飞』", "73219704811084"):section("传送与甩飞玩家", true)
 dropdownMethod = "Dropdown"
 dropdownLabel = "选择玩家名称"
 local playerDropdown = TeleportSection:Dropdown("选择玩家名称", "Dropdown", PlayerConfig.dropdown, function(selectedPlayer)
@@ -2189,16 +2189,16 @@ TeleportSection:Button("传送到玩家旁边", function()
   local targetPlayer = game.Players:FindFirstChild(PlayerConfig.playernamedied)
   if targetPlayer and targetPlayer.Character and targetPlayer.Character.HumanoidRootPart then
     localRootPart.CFrame = targetPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0)
-    Notify("皮脚本", "已经传送到玩家身边", "rbxassetid://18941716391", 5)
+    Notify("皮脚本", "已经传送到玩家身边", "rbxassetid://73219704811084", 5)
   else
-    Notify("皮脚本", "无法传送 原因: 玩家已消失", "rbxassetid://18941716391", 5)
+    Notify("皮脚本", "无法传送 原因: 玩家已消失", "rbxassetid://73219704811084", 5)
   end
 end)
 TeleportSection:Toggle("循环锁定传送", "Loop", false, function(enabled)
   
   if enabled then
     PlayerConfig.LoopTeleport = true
-    Notify("迪脚本", "已开启循环传送", "rbxassetid://18941716391", 5)
+    Notify("迪脚本", "已开启循环传送", "rbxassetid://73219704811084", 5)
     while PlayerConfig.LoopTeleport do
       local localRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
       local targetPlayer = game.Players:FindFirstChild(PlayerConfig.playernamedied)
@@ -2209,7 +2209,7 @@ TeleportSection:Toggle("循环锁定传送", "Loop", false, function(enabled)
     end
   else
     PlayerConfig.LoopTeleport = false
-    Notify("迪脚本", "已关闭循环传送", "rbxassetid://18941716391", 5)
+    Notify("迪脚本", "已关闭循环传送", "rbxassetid://73219704811084", 5)
   end
 end)
 TeleportSection:Button("把玩家传送过来", function()
@@ -2218,16 +2218,16 @@ TeleportSection:Button("把玩家传送过来", function()
   local targetPlayer = game.Players:FindFirstChild(PlayerConfig.playernamedied)
   if targetPlayer and targetPlayer.Character and targetPlayer.Character.HumanoidRootPart then
     targetPlayer.Character.HumanoidRootPart.CFrame = localRootPart.CFrame + Vector3.new(0, 3, 0)
-    Notify("迪脚本", "已将玩家传送过来", "rbxassetid://18941716391", 5)
+    Notify("迪脚本", "已将玩家传送过来", "rbxassetid://73219704811084", 5)
   else
-    Notify("迪脚本", "无法传送 原因: 玩家已消失", "rbxassetid://18941716391", 5)
+    Notify("迪脚本", "无法传送 原因: 玩家已消失", "rbxassetid://73219704811084", 5)
   end
 end)
 TeleportSection:Toggle("循环传送玩家过来", "Loop", false, function(enabled)
   
   if enabled then
     PlayerConfig.LoopTeleport = true
-    Notify("迪脚本", "已开启循环传送玩家过来", "rbxassetid://", 5)
+    Notify("迪脚本", "已开启循环传送玩家过来", "rbxassetid://73219704811084", 5)
     while PlayerConfig.LoopTeleport do
       local localRootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
       local targetPlayer = game.Players:FindFirstChild(PlayerConfig.playernamedied)
@@ -2238,7 +2238,7 @@ TeleportSection:Toggle("循环传送玩家过来", "Loop", false, function(enabl
     end
   else
     PlayerConfig.LoopTeleport = false
-    Notify("迪脚本", "已关闭循环传送玩家过来", "rbxassetid://18941716391", 5)
+    Notify("迪脚本", "已关闭循环传送玩家过来", "rbxassetid://73219704811084", 5)
   end
 end)
 TeleportSection:Toggle("吸全部玩家", "Get All", false, function(enabled)
@@ -2260,10 +2260,10 @@ TeleportSection:Toggle("查看玩家", "look player", false, function(enabled)
   
   if enabled then
     game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players"):FindFirstChild(PlayerConfig.playernamedied).Character.Humanoid
-    Notify("迪脚本", "已开启查看玩家", "rbxassetid://18941716391", 5)
+    Notify("迪脚本", "已开启查看玩家", "rbxassetid://73219704811084", 5)
   else
     game:GetService("Workspace").CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
-    Notify("迪脚本", "已关闭查看玩家", "rbxassetid://18941716391", 5)
+    Notify("迪脚本", "已关闭查看玩家", "rbxassetid://73219704811084", 5)
   end
 end)
 TeleportSection:Button("甩飞一次", function()
@@ -2810,7 +2810,7 @@ end)
 
 r50_0 = UILibrary
 
-r71_0 = r50_0:Tab("『自动说话』", "18930406865"):section("自动说话", true)
+r71_0 = r50_0:Tab("『自动说话』", "73219704811084"):section("自动说话", true)
 local r74_0 = "Textbox"
 r74_0 = "你要说的话"
 r71_0:Textbox("你要说的话", "TextBoxFlag", "填写你想要说的话", function(r0_664)
@@ -2990,7 +2990,7 @@ r71_0:Toggle("骂人语录(我老师爱用×＿×)", "MR", false, function(r0_18
   _G.sb = r0_189
   sb()
 end)
-local r73_0 = r50_0:Tab("『时间』", "18930406865"):section("时间", true)
+local r73_0 = r50_0:Tab("『时间』", "73219704811084"):section("时间", true)
 r74_0 = r73_0:Label("1")
 local r75_0 = r73_0:Label("2")
 local r76_0 = r73_0:Label("3")
@@ -3089,7 +3089,7 @@ local r78_0 = r73_0:Label("5")
     end
   end)
 
-local r84_0 = r50_0:Tab("『透视ESP』", "18930406865"):section("透视ESP", true)
+local r84_0 = r50_0:Tab("『透视ESP』", "73219704811084"):section("透视ESP", true)
 r84_0:Label("①透视ESP")
 r84_0:Label("每个服务器都可以用 『推荐开启』")
 local r85_0 = game:GetService("RunService")
@@ -3600,7 +3600,7 @@ r84_0:Toggle("团队判断", "Team check", false, function(r0_356)
   
   getgenv().TeamCheck = r0_356
 end)
-local r117_0 = r50_0:Tab("『自瞄』", "18930406865"):section("自瞄", true)
+local r117_0 = r50_0:Tab("『自瞄』", "73219704811084"):section("自瞄", true)
 r117_0:Label("圈圈自瞄")
 r117_0:Toggle("显示圈圈自瞄", "open/close", false, function(r0_42)
   
@@ -3802,7 +3802,7 @@ r117_0:Toggle("血量优先", "Health Priority", false, function(r0_239)
   
   AimConfig.healthPriority = r0_239
 end)
-r123_0 = r50_0:Tab("『FE』", "18930406865"):section("脚本", true)
+r123_0 = r50_0:Tab("『FE』", "73219704811084"):section("脚本", true)
 r123_0:Button("FE cmd", function()
   
   loadstring(game:HttpGet("https://raw.githubusercontent.com/lxte/cmd/main/testing-main.lua"))()
@@ -4177,7 +4177,7 @@ r125_0:Button("航空模拟器音乐", function()
   r0_100.Parent = game.Workspace
   r0_100:Play()
 end)
-local r127_0 = r50_0:Tab("『其他脚本』", "18930406865"):section("其他脚本", true)
+local r127_0 = r50_0:Tab("『其他脚本』", "73219704811084"):section("其他脚本", true)
 r127_0:Button("鸭Hub", function()
   
   loadstring(game:HttpGet(utf8.char((function()
@@ -4314,7 +4314,7 @@ r127_0:Button("星空脚本", function()
   
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/XiaoYunCN/UWU/main/%E5%85%B6%E4%BB%96%E5%9B%BD%E5%86%85%E8%84%9A%E6%9C%AC/%E6%98%9F%E7%A9%BA%E8%84%9A%E6%9C%AC/MoonSecV3.lua]]))()
 end)
-local r129_0 = r50_0:Tab("『其他注入器』", "18930406865"):section("其他注入器", true)
+local r129_0 = r50_0:Tab("『其他注入器』", "73219704811084"):section("其他注入器", true)
 r129_0:Button("syn", function()
   
   loadstring(game:HttpGet("https://pastebin.com/raw/tWGxhNq0"))()
@@ -4476,7 +4476,7 @@ r131_0:Button("光影深", function()
   
   loadstring(game:HttpGet("https://raw.githubusercontent.com/MZEEN2424/Graphics/main/Graphics.xml"))()
 end)
-r137_0 = r50_0:Tab("『飞行与飞车』", "18930406865"):section("飞行与飞车", true)
+r137_0 = r50_0:Tab("『飞行与飞车』", "73219704811084"):section("飞行与飞车", true)
 r137_0:Label("飞行")
 r137_0:Toggle("飞行", "Fly", false, function(r0_289)
   
@@ -4778,7 +4778,7 @@ r137_0:Toggle("飞车穿墙", "Toggleflag", false, function(r0_218)
     vnoclipParts = {}
   end
 end)
-local r140_0 = r50_0:Tab("『指令与念力』", "18930406865"):section("指令与念力", true)
+local r140_0 = r50_0:Tab("『指令与念力』", "73219704811084"):section("指令与念力", true)
 r140_0:Label("【指令】")
 r140_0:Button("指令脚本", function()
   
@@ -4828,7 +4828,7 @@ r140_0:Button("让手上的道具飘起来", function()
 end)
 r140_0:Label("J-飞起来")
 r140_0:Label("K-回到手中")
-local r142_0 = r50_0:Tab("『加入服务器/游戏』", "18930406865"):section("加入服务器/游戏", true)
+local r142_0 = r50_0:Tab("『加入服务器/游戏』", "73219704811084"):section("加入服务器/游戏", true)
 r142_0:Button("加入极速传奇", function()
   
   local r0_686 = 3101667897
@@ -4877,7 +4877,7 @@ r142_0:Button("加入餐厅大亨2", function()
   local r1_338 = "https://www.roblox.com/games/" .. r0_338
   game:GetService("TeleportService"):Teleport(r0_338, game.Players.LocalPlayer)
 end)
-local r144_0 = r50_0:Tab("『其他服务器』", "18930406865"):section("皮脚本-整合脚本", true)
+local r144_0 = r50_0:Tab("『其他服务器』", "73219704811084"):section("皮脚本-整合脚本", true)
 r144_0:Button("迪脚本-骨折模拟器", function()
   
   loadstring(game:HttpGet("https://pastefy.app/BEvzhV3I/raw"))()
@@ -4914,15 +4914,15 @@ r144_0:Button("迪脚本-攀登珠穆朗玛峰模拟器", function()
   
   loadstring(game:HttpGet("https://pastefy.app/1GPELOFv/raw"))()
 end)
-local r146_0 = r50_0:Tab("『力量传奇』", "18930406865"):section("请到力量传奇服务器执行迪脚本", true)
+local r146_0 = r50_0:Tab("『力量传奇』", "73219704811084"):section("请到力量传奇服务器执行迪脚本", true)
 r146_0:Label("尊敬的迪脚本用户您好")
 r146_0:Label("请您进入力量传奇服务器执行迪脚本")
 r146_0:Label("即可显示力量传奇服务器功能")
-local r148_0 = r50_0:Tab("『极速传奇』", "18930406865"):section("请到极速传奇服务器执行迪脚本", true)
+local r148_0 = r50_0:Tab("『极速传奇』", "73219704811084"):section("请到极速传奇服务器执行迪脚本", true)
 r148_0:Label("尊敬的迪脚本用户您好")
 r148_0:Label("请您进入极速传奇服务器执行迪脚本")
 r148_0:Label("即可显示极速传奇服务器功能")
-local r150_0 = r50_0:Tab("『忍者传奇』", "18930406865"):section("主要功能", true)
+local r150_0 = r50_0:Tab("『忍者传奇』", "73219704811084"):section("主要功能", true)
 r150_0:Toggle("自动挥舞", "AT", false, function(enabled)
   getgenv().autoswing = enabled
   if enabled then
@@ -5132,7 +5132,7 @@ r150_0:Button("传送到死亡宠物", function()
   
   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4593.21337890625, 130.87181091308594, 1430.2239990234375)
 end)
-local r152_0 = r50_0:Tab("『监狱人生』", "18930406865"):section("请到监狱人生服务器执行迪脚本", true)
+local r152_0 = r50_0:Tab("『监狱人生』", "73219704811084"):section("请到监狱人生服务器执行迪脚本", true)
 r152_0:Label("尊敬的迪脚本用户您好")
 r152_0:Label("请您进入监狱人生服务器执行迪脚本")
 r152_0:Label("即可显示监狱人生服务器功能")
@@ -5140,7 +5140,7 @@ r50_0:Tab("『战斗勇士』", "18930406865"):section("整合脚本", true):But
   
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Pi-Script-Fightingwarrior.lua]]))()
 end)
-local r156_0 = r50_0:Tab("『自然灾害』", "18930406865"):section("主要功能", true)
+local r156_0 = r50_0:Tab("『自然灾害』", "73219704811084"):section("主要功能", true)
 r156_0:Toggle("自动存活", "ToggleInfo", false, function(r0_85)
   
   _G.autowinfarm = r0_85
@@ -5411,7 +5411,7 @@ local r159_0 = r50_0:Tab("『压力』", "18930406865"):section("请到压力服
 r159_0:Label("尊敬的迪脚本用户您好")
 r159_0:Label("请您进入压力服务器执行迪脚本")
 r159_0:Label("即可显示压力服务器功能")
-r50_0:Tab("『火箭发射模拟器』", "18930406865"):section("整合脚本", true):Button("皮脚本-火箭发射模拟器", function()
+r50_0:Tab("『火箭发射模拟器』", "73219704811084"):section("整合脚本", true):Button("皮脚本-火箭发射模拟器", function()
   
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-rocketlaunching.lua]]))()
 end)
@@ -5803,11 +5803,11 @@ r163_0:Button("自动刷巴掌", function()
   
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Farm]]))()
 end)
-local r165_0 = r50_0:Tab("『河北唐县』", "18930406865"):section("请到河北唐县服务器执行皮脚本", true)
+local r165_0 = r50_0:Tab("『河北唐县』", "73219704811084"):section("请到河北唐县服务器执行皮脚本", true)
 r165_0:Label("尊敬的迪脚本用户您好")
 r165_0:Label("请您进入河北唐县服务器执行迪脚本")
 r165_0:Label("即可显示河北唐县服务器功能")
-local r167_0 = r50_0:Tab("『战争大亨』", "18930406865"):section("主要功能", true)
+local r167_0 = r50_0:Tab("『战争大亨』", "73219704811084"):section("主要功能", true)
 r167_0:Button("范围", function()
   
   loadstring(game:HttpGet("https://pastefy.app/vC3cCPDp/raw"))()
@@ -6027,7 +6027,7 @@ r167_0:Dropdown("基地传送", "基地传送", {
     warn("无效的基地位置：" .. r0_398)
   end
 end)
-local r169_0 = r50_0:Tab("『鲨口求生』", "18930406865"):section("主要功能", true)
+local r169_0 = r50_0:Tab("『鲨口求生』", "73219704811084"):section("主要功能", true)
 local r172_0 = "Dropdown"
 r172_0 = "选择船只"
 r169_0:Dropdown("选择船只", "FreeBoat", {
@@ -6095,7 +6095,7 @@ r169_0:Button("返回出生点", function()
   
   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-161.43846130371094, 99.27043914794922, -8.31688117980957)
 end)
-r170_0 = r50_0:Tab("『超级大力士模拟器』", "18930406865")
+r170_0 = r50_0:Tab("『超级大力士模拟器』", "73219704811084")
 local r171_0 = r170_0:section("主要功能", true)
 r171_0:Toggle("自动锻炼", "AS", false, function(r0_630)
   
@@ -6341,7 +6341,7 @@ r174_0:Button("指令区域", function()
     Duration = 20,
   })
 end)
-local r176_0 = r50_0:Tab("『兵工厂』", "18930406865"):section("主要功能", true)
+local r176_0 = r50_0:Tab("『兵工厂』", "73219704811084"):section("主要功能", true)
 r176_0:Button("快速射击", function()
   
   for r4_1, r5_1 in pairs(game.ReplicatedStorage.Weapons:GetDescendants()) do
@@ -6403,7 +6403,7 @@ r176_0:Button("范围", function()
     end
   end)
 end)
-local r178_0 = r50_0:Tab("『感染性微笑』", "18930406865"):section("主要功能", true)
+local r178_0 = r50_0:Tab("『感染性微笑』", "73219704811084"):section("主要功能", true)
 r178_0:Button("防止微笑感染", function()
   
   for r3_459, r4_459 in pairs(game.workspace:GetDescendants()) do
@@ -6511,7 +6511,7 @@ r178_0:Toggle("瓶子自动打击", "text", false, function(r0_515)
     getgenv().HitAuraConnection = nil
   end
 end)
-local r180_0 = r50_0:Tab("『铲雪模拟器』", "18930406865"):section("主要功能", true)
+local r180_0 = r50_0:Tab("『铲雪模拟器』", "73219704811084"):section("主要功能", true)
 r180_0:Toggle("自动收集雪", "text", false, function(r0_317)
   
   toggle = Value
@@ -6565,15 +6565,15 @@ r180_0:Button("传送超大铲雪的地方", function()
   
   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-391.4309997558594, 15.84949016571045, 150.15187072753906)
 end)
-r50_0:Tab("『进攻的僵尸』", "18930406865"):section("主要功能", true):Button("自动传送到僵尸上并攻击僵尸(必须装备武器)", function()
+r50_0:Tab("『进攻的僵尸』", "73219704811084"):section("主要功能", true):Button("自动传送到僵尸上并攻击僵尸(必须装备武器)", function()
   
   loadstring(game:HttpGet("https://pastefy.app/gNPPoP8x/raw"))()
 end)
-r50_0:Tab("『造船寻宝』", "18930406865"):section("整合脚本", true):Button("迪脚本-造船寻宝", function()
+r50_0:Tab("『造船寻宝』", "73219704811084"):section("整合脚本", true):Button("迪脚本-造船寻宝", function()
   
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Shipbuildingandtreasurehunting.lua]]))()
 end)
-local r186_0 = r50_0:Tab("『奎尔湖』", "18930406865"):section("主要功能", true)
+local r186_0 = r50_0:Tab("『奎尔湖』", "73219704811084"):section("主要功能", true)
 r186_0:Toggle("无敌模式", "", false, function(r0_92)
   
   game.ReplicatedStorage.DamageHumanoid:FireServer(-2000000000)
@@ -6616,7 +6616,7 @@ r186_0:Button("动力套装", function()
   
   game.ReplicatedStorage.ChangeOutfits:FireServer("SuperScuba")
 end)
-local r188_0 = r50_0:Tab("『奶酪逃生』", "18930406865"):section("主要功能", true)
+local r188_0 = r50_0:Tab("『奶酪逃生』", "73219704811084"):section("主要功能", true)
 r188_0:Button("获取所有奶酪", function()
   
   for r3_122, r4_122 in pairs(game.Workspace.FindCheese:GetDescendants()) do
@@ -6686,7 +6686,7 @@ r188_0:Button("终点", function()
   
   game.Players.LocalPlayer.Character:MoveTo(Vector3.new(1758.41, 57, -137.61))
 end)
-local r190_0 = r50_0:Tab("『最强战场』", "18930406865"):section("主要功能", true)
+local r190_0 = r50_0:Tab("『最强战场』", "73219704811084"):section("主要功能", true)
 r190_0:Button("SOON..", function()
   
   print("1")
@@ -6703,7 +6703,7 @@ r190_0:Button("最强战场 ③", function()
   
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Scripterbacon/TSBobfuscator/main/Main.Lua"))()
 end)
-local r192_0 = r50_0:Tab("『BF』", "18930406865"):section("脚本", true)
+local r192_0 = r50_0:Tab("『BF』", "73219704811084"):section("脚本", true)
 r192_0:Button("BF刷级脚本", function()
   
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyy/Basicallyy/main/MinGamingV4.lua"))()
@@ -6724,7 +6724,7 @@ r192_0:Button("HOHO HUB", function()
   
   oadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 end)
-local r194_0 = r50_0:Tab("『伐木大亨2』", "18930406865"):section("脚本", true)
+local r194_0 = r50_0:Tab("『伐木大亨2』", "73219704811084"):section("脚本", true)
 r194_0:Button(" 忍-伐木大亨2", function()
   
   loadstring(game:HttpGet(utf8.char((function()
@@ -6862,16 +6862,17 @@ r194_0:Dropdown("传送", "Dropdown", {
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1464.8, 356.3, 3257.2)
   end
 end)
-r50_0:Tab("『Rooms&Doors』", "18930406865"):section("整合脚本", true):Button("迪脚本-Rooms&doors", function()
+r50_0:Tab("『Rooms&Doors』", "73219704811084"):section("整合脚本", true):Button("迪脚本-Rooms&doors", function()
   
   getgenv().XiaoPi = "迪脚本-Rooms&doors"
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/xiaopi77/refs/heads/main/Roblox-Pi-Script-Rooms%26doors.lua]]))()
 end)
-r50_0:Tab("『汽车经销大亨』", "18930406865"):section("整合脚本", true):Button("迪脚本-汽车经销大亨", function()
+r50_0:Tab("『汽车经销大亨』", "73219704811084"):section("整合脚本", true):Button("迪脚本-汽车经销大亨", function()
   
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Automobiledealertycoon.lua]]))()
 
 end)    
+
 
 
 
