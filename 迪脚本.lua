@@ -586,7 +586,7 @@ LocalPlayer.CharacterAdded:Connect(function(character)
   end
 end)
 local UILibrary = loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/%E7%9A%AE%E8%84%9A%E6%9C%ACUI%E6%BA%90%E7%A0%81.lua]]))():new("迪脚本")
-local InfoTab = UILibrary:Tab("『信息』", "18930406865")
+local InfoTab = UILibrary:Tab("『信息』", "73219704811084")
 local PlayerInfoSection = InfoTab:section("玩家信息", true)
 PlayerInfoSection:Label("您的注入器:" .. identifyexecutor())
 PlayerInfoSection:Label("您的用户名:" .. game.Players.LocalPlayer.Character.Name)
@@ -6872,6 +6872,7 @@ r50_0:Tab("『汽车经销大亨』", "73219704811084"):section("整合脚本", 
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Automobiledealertycoon.lua]]))()
 
 end)    
+
 
 
 
