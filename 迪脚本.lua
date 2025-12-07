@@ -1208,9 +1208,9 @@ GeneralSection:Button("查看游戏中的所有玩家（包括血量条）", fun
   
   loadstring(game:HttpGet("https://pastebin.com/raw/G2zb992X", true))()
 end)
-GeneralSection:Button("工具包", function()
+GeneralSection:Button("亡命速速12月7日", function()
   
-  loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+  loadstring(game:HttpGet("https://rawscripts.net/raw/Deadly-Delivery-Auto-farm-Op-Keyless-69904"))()
 end)
 GeneralSection:Button("老外传送至玩家身边", function()
   
@@ -6872,6 +6872,7 @@ r50_0:Tab("『汽车经销大亨』", "18930406865"):section("整合脚本", tru
   loadstring(game:HttpGet([[https://raw.githubusercontent.com/xiaopi77/Integration-script/refs/heads/main/Roblox-Pi-Script-Automobiledealertycoon.lua]]))()
 
 end)    
+
 
 
 
