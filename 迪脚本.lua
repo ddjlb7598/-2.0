@@ -4222,10 +4222,10 @@ r127_0:Button("鸭Hub", function()
     })
   end)())))()
 end)
-r127_0:Button("落叶中心", function()
+r127_0:Button("迪脚本中心3.0", function()
   
-  getgenv().LS = "落叶中心"
-  loadstring(game:HttpGet([[https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83%E6%B7%B7%E6%B7%86.txt]]))()
+  getgenv().LS = "迪脚本中心3.0"
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/ddjlb7598/-3666666/refs/heads/main/%E8%90%BD%E5%8F%B6%E4%B8%AD%E5%BF%83X%E6%BA%90%E7%A0%81.lua"))()
 end)
 r127_0:Button("情云脚本", function()
   
@@ -6872,6 +6872,7 @@ r50_0:Tab("『汽车经销大亨』", "73219704811084"):section("整合脚本", 
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/car%20dealer", true))()
 
 end)    
+
 
 
 
